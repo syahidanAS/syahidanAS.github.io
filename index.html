@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahidan Arrizaldy S</title>
+    <link rel="shortcut icon" href="assets/avatar.png" type="image/x-icon">
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+
+<body onload="setTimeout(onTimerElapsed, 1000);">
+
+    <div id="floatLoading">
+        <img class="snail-loading" src="/assets/snail-loading.gif" alt="">
+    </div>
+
+    <div id="angry">
+    
+        <img class="angry-cat" src="/assets/rabbit.gif" alt="">
+    </div>
+        
+        
+
+    
+    <!-- header section starts-->
+    <header>
+        <div class="user">
+            <img src="./assets/syahidan.jpg" alt="ava">
+            <h3 class="name">Syahidan A.S</h3>
+            <p class="post">Software Developer</p>
+        </div>
+  
+      
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#portfolio">portofolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><button class="btn btn-success" onclick="play()">Don't touch me!</button></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section end-->
+    <div id="menu" class="fa fa-bars">
+    </div>
+
+    <!-- home section starts-->
+    <section class="home" id="home">
+        <h3>HI THERE!</h3>
+        <div class="typewriter">
+            <h1>I'M <span>Syahidan Arrizaldy Sidik</span></h1>
+        </div>
+        
+        <p>I am a software developer from Indonesia. Let's make something great with me!</p>
+        <a href="#about"><button class="btn">about me <i class="fa fa-user"></i></button></a>
+    </section>
+    <!-- home section ends-->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About </span>Me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span>name : </span>Syahidan Arrizaldy Sidik</h3>
+                <h3><span>age : </span>22</h3>
+                <h3><span>Country : </span>Indonesia</h3>
+                <h3><span>Job : </span>Software Developer</h3>
+                <h3><span>language : </span>Bahasa Indonesia, English</h3>
+                <a id="btnCV"><button class="btn">download CV <i class="fa fa-download"></i></button></a>
+            </div>
+            <div class="counter">
+
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>10+</span>
+                    <h3>projects completed</h3>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -->
+
+
+    <!-- education section starts -->
+    <section class="education" id="education">
+        <h1 class="heading">my <span>education</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa fa-graduation-cap"></i>
+                <span>2011 - 2013</span>
+                <h3 >SMP Negeri 2 Karawang Barat</h3>
+                <p style="text-transform: none;">Graduated with a school report card score of 8.24 from index 0-10 and national exam 7.9 from index 0-10</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-graduation-cap"></i>
+                <span>2014 - 2016</span>
+                <h3>SMA Negeri 3 Karawang</h3>
+                <p style="text-transform: none;">
+                    Education program majoring in Matematika & Ipa (MIPA) with an average score of 83.3 from an index of 0-100</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-graduation-cap"></i>
+                <span>2017 - 2021</span>
+                <h3>Sekolah Tinggi Teknologi Bandung</h3>
+                <p style="text-transform: none;">
+                    Informatics engineering study program, graduated with a 3.51 GPA (cum laude) from index 0-4, with the best thesis award </p>
+            </div>
+        </div>
+    </section>
+    <!-- education section ends -->
+
+
+          <!-- skills section starts -->
+          <section class="about" id="skills">
+            <h1 class="heading">My <span>Skills</span></h1>
+            <div class="row">
+    
+                <div class="counter">
+    
+                    <div class="box">
+                        <span><img src="/assets/nodejs.svg" alt="nodejs"></span>
+                        <h3>Node JS</h3>
+                    </div>
+    
+                    <div class="box">
+                        <span><img src="/assets/ci.svg" alt="codeigniter"></span>
+                        <h3>Codeigniter</h3>
+                    </div>
+    
+                    <div class="box">
+                        <span><img src="/assets/vue.png" alt="vuejs"></span>
+                        <h3>Vue JS</h3>
+                    </div>
+    
+                    <div class="box">
+                        <span><img src="/assets/as.svg" alt="Android Studio"></span>
+                        <h3>Android Studio</h3>
+                    </div>
+
+                    <div class="box">
+                        <span><img src="/assets/arduino.png" alt="Arduino"></span>
+                        <h3>Arduino</h3>
+                    </div>
+    
+                    <div class="box">
+                        <span><img src="/assets/mysql.png" alt="mysql"></span>
+                        <h3>MySQL</h3>
+                    </div>
+                    
+                    <div class="box">
+                        <span><img src="/assets/firebase.png" alt="firebase"></span>
+                        <h3>Firebase</h3>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- skills section ends -->
+
+
+    <!-- portfolio section starts -->
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio</span> </h1>
+
+        <div class="box-container">
+            <div class="box" >
+                
+                <img src="/assets/sipewe.png" alt="">
+                
+            </div>
+
+            <div class="box">
+                <img src="/assets/sipiu.png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="/assets/thebright.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> me </h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">contact info</h3>
+                <div class="info">
+                    <h3 style="text-transform: none;"><i class="fa fa-envelope"></i> syahidan139@gmail.com</h3>
+                    <h3><i class="fa fa-phone"></i> +628-224-629-7995</h3>
+                    <h3><i class="fa fa-map-marker"></i> Kabupaten Karawang, Jawa Barat, Indonesia - 41388.</h3>
+                </div>
+            </div>
+            
+               <div class="form">
+                <input id="nameMessage" type="text" placeholder="Full Name" class="box">
+                <input id="emailMessage" type="email" placeholder="Email address" class="box">
+                <textarea name="" id="bodyMessage" class="box message" cols="30" rows="10" placeholder="message"></textarea>
+                <button id="btnMessage" type="submit" class="btn"> send <i class="fa fa-paper-plane"></i></button>
+                <div id="loadingMsg" style="display: none;">
+                    <img style="width: 65px;" src="/assets/loading_circle.gif" alt="">
+                </div>
+               </div>
+            
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h5 style="text-transform: none;">Please enter your email address. CV will be sent to your email  when approved!
+    </h5>
+
+        <input id="emailCV" style="text-transform: none;" class="form-control form-control-lg"  type="email" placeholder="Email Address" required>
+        <p id="emailValidator" class="text-danger" style="display: none;">Email required!</p>
+        <button class="btn" id="btnCvReq"> Submit <i class="fa fa-paper-plane"></i></button>
+        <div id="loadingCV" style="display: none;">
+            <img style="width: 100px;" src="/assets/loading.gif" alt="">
+        </div>
+        <h5 id="thxTxt" style="display: none;" class="text-success">Thank you, your request will be reviewed :)<h5>
+        
+
+    </div>
+  
+  </div>
+
+    <!-- scroll top button -->
+    <a href="#home" class="top">
+        <img src="/assets/up-arrow.png" alt="">
+    </a>
+    <audio id="audio" src="assets/ouch.mp3"></audio>
+
+    <div id="snackbar">Thank you, your request will be reviewed!</div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script>
+        var FloatLoading = document.getElementById("floatLoading");
+        var lovemessage = document.getElementById("angry")
+        function onTimerElapsed(){
+            FloatLoading.style.display = FloatLoading.style.display === 'none' ? 'block' : 'none';
+        
+        }
+
+        function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+    <script type="module" src="/cvreq.js"></script>
+    <script>
+        // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("btnCV");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+    </script>
+
+ 
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
