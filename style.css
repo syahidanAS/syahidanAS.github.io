@@ -271,6 +271,7 @@ header .navbar ul li a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     padding:1rem 0;
+    height: 30%;
     padding-left: 3rem;
 }
 
