@@ -143,12 +143,14 @@ header .user .post{
 }
 
 header .navbar{
-    width: 100%;
+   width:100%;
+  
 }
 
 header .navbar ul{
     list-style: none;
     padding: 1rem 3rem;
+    width: 100%;
 
 }
 
@@ -790,6 +792,10 @@ header .navbar ul li a:hover{
 }
 
 
+.jumbotron {
+    margin-bottom: 0rem;
+    background-color: white;
+}
 
 
 
