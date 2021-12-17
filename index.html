@@ -25,9 +25,6 @@
     
         <img class="angry-cat" src="/assets/rabbit.gif" alt="">
     </div>
-        
-        
-
     
     <!-- header section starts-->
     <header>
@@ -43,10 +40,10 @@
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#education">education</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#portfolio">portofolio</a></li>
+                <!-- <li><a href="#skills">skills</a></li> -->
+                <li><a href="#portfolio">case study</a></li>
                 <li><a href="#contact">contact</a></li>
-                <li><button class="btn btn-success" onclick="play()">Don't touch me!</button></li>
+              
             </ul>
         </nav>
     </header>
@@ -59,10 +56,11 @@
         <h3>HI THERE!</h3>
         <div class="typewriter">
             <h1>I'M <span>Syahidan Arrizaldy Sidik</span></h1>
+            
         </div>
         
         <p>I am a software developer from Indonesia. Let's make something great with me!</p>
-        <a href="#about"><button class="btn">about me <i class="fa fa-user"></i></button></a>
+        <a href="#about"><button class="btn" onclick="play()">about me <i class="fa fa-user"></i></button></a>
     </section>
     <!-- home section ends-->
 
@@ -128,7 +126,7 @@
 
 
           <!-- skills section starts -->
-          <section class="about" id="skills">
+          <!-- <section class="about" id="skills">
             <h1 class="heading">My <span>Skills</span></h1>
             <div class="row">
     
@@ -176,36 +174,68 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- skills section ends -->
 
 
     <!-- portfolio section starts -->
     <section class="portfolio" id="portfolio">
 
-        <h1 class="heading"> my <span>portfolio</span> </h1>
+        <h1 class="heading"> case <span>study</span> </h1>
 
         <div class="box-container">
-            <div class="box" >
-                
-                <img src="/assets/sipewe.png" alt="">
-                
-            </div>
 
-            <div class="box">
-                <img src="/assets/sipiu.png" alt="">
-            </div>
+            <div class="box container-center">
+                <img src="/assets/sipewe.png" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="btn "><a class="inner-text" href="sipewe">Preview</a></div>
+                </div>
+              </div>
 
-            <div class="box">
-                <img src="/assets/thebright.png" alt="">
-            </div>
+              <div class="box container-center">
+                <img src="/assets/sipiu.png" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="btn "><a class="inner-text" href="http://dev.thebrightcourse.com" target="blank">Preview</a></div>
+                </div>
+              </div>
 
-            <div class="box">
-                <img src="/assets/interconnect.png" alt="">
-            </div>
+              <div class="box container-center">
+                <img src="/assets/thebright.png" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="btn "><a class="inner-text" href="http://dev.thebrightcourse.com" target="blank">Preview</a></div>
+                </div>
+              </div>
 
-
+              <div class="box container-center">
+                <img src="/assets/interconnect.png" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="btn "><a class="inner-text" href="http://dev.thebrightcourse.com" target="blank">Preview</a></div>
+                </div>
+              </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
     </section>
     <!-- portfolio section ends -->
@@ -239,13 +269,11 @@
 
     <!-- The Modal -->
 <div id="myModal" class="modal">
-
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
       <h5 style="text-transform: none;">Please enter your email address. CV will be sent to your email  when approved!
     </h5>
-
         <input id="emailCV" style="text-transform: none;" class="form-control form-control-lg"  type="email" placeholder="Email Address" required>
         <p id="emailValidator" class="text-danger" style="display: none;">Email required!</p>
         <button class="btn" id="btnCvReq"> Submit <i class="fa fa-paper-plane"></i></button>
@@ -253,10 +281,21 @@
             <img style="width: 100px;" src="/assets/loading.gif" alt="">
         </div>
         <h5 id="thxTxt" style="display: none;" class="text-success">Thank you, your request will be reviewed :)<h5>
-        
-
     </div>
+  </div>
+
+
+
+
   
+
+  <!-- Modal sipewe -->
+  <div id="sipeweModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span  class="close"><i class="sipeweClose">&times;</i></span>
+      <h3 style="text-transform: none;">Sistem Penghubung Warga (SIPEWE)</h3>
+    </div>
   </div>
 
     <!-- scroll top button -->
@@ -287,26 +326,17 @@
     </script>
     <script type="module" src="/cvreq.js"></script>
     <script>
-        // Get the modal
             var modal = document.getElementById("myModal");
-
-            // Get the button that opens the modal
             var btn = document.getElementById("btnCV");
 
-            // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
 
-            // When the user clicks on the button, open the modal
             btn.onclick = function() {
             modal.style.display = "block";
             }
-
-            // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
             modal.style.display = "none";
             }
-
-            // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
@@ -314,7 +344,6 @@
             }
     </script>
 
- 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js file link -->
