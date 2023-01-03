@@ -3,7 +3,9 @@
   <div class="container flex flex-wrap items-center justify-between mx-auto">
     
     <a href="/" class="flex items-center">
-       <h1 class="text-slate text-2xl font-bold">Logo</h1>
+       <h1 class="text-slate text-2xl font-bold">
+        <img class="w-14" src="@/assets/logo.png" alt="">
+       </h1>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
       <span class="sr-only">Open main menu</span>

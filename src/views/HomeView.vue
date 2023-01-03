@@ -39,6 +39,9 @@
     </div>
 
     <div class="flex flex-col gap-4 py-14 lg:py-20 w-10/12 mx-auto">
+              <h1 class="text-2xl  font-bold text-slate-700 text-center my-8">
+            Proyek yang sudah saya kerjakan
+          </h1>
       <div
         class="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-20"
       >
@@ -129,13 +132,12 @@
     <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
       Play the song that i love
     </h1>
-    <div class="flex flex-col lg:flex-row mx-auto gap-0 lg:gap-2">
+    <div class="flex flex-col lg:flex-row mx-auto  lg:gap-2">
       <iframe
         style="border-radius: 12px"
         class="w-full"
         src="https://open.spotify.com/embed/track/6uBhi9gBXWjanegOb2Phh0?utm_source=generator&theme=0"
-        frameBorder="0"
-        allowfullscreen=""
+
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
@@ -143,8 +145,6 @@
         style="border-radius: 12px"
         class="w-full"
         src="https://open.spotify.com/embed/track/4Ce37cRWvM1vIGGynKcs22?utm_source=generator"
-        frameBorder="0"
-        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
@@ -152,8 +152,6 @@
         style="border-radius: 12px"
         class="w-full"
         src="https://open.spotify.com/embed/track/4mzP5mHkRvGxdhdGdAH7EJ?utm_source=generator"
-        frameBorder="0"
-        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
