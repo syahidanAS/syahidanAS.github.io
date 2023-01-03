@@ -40,8 +40,7 @@
 
     <div class="py-14 lg:py-20 w-10/12 mx-auto">
       <div
-        class="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-20"
-      >
+        class="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-20">
         <div class="flex flex-wrap">
           <h1 class="text-2xl font-bold text-slate-700 my-4 md:hidden">
             Last project I worked on
