@@ -132,10 +132,10 @@
     <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
       Play the song that i love
     </h1>
-    <div class="flex flex-col lg:flex-row mx-auto  lg:gap-2">
+    <div class="flex flex-col lg:flex-row mx-auto  lg:gap-2 mb-7">
       <iframe
         style="border-radius: 12px"
-        class="w-full"
+        class="w-full aspect-video"
         src="https://open.spotify.com/embed/track/6uBhi9gBXWjanegOb2Phh0?utm_source=generator&theme=0"
 
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -143,14 +143,14 @@
       ></iframe>
       <iframe
         style="border-radius: 12px"
-        class="w-full"
+        class="w-full aspect-video"
         src="https://open.spotify.com/embed/track/4Ce37cRWvM1vIGGynKcs22?utm_source=generator"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
       <iframe
         style="border-radius: 12px"
-        class="w-full"
+        class="w-full aspect-video"
         src="https://open.spotify.com/embed/track/4mzP5mHkRvGxdhdGdAH7EJ?utm_source=generator"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
