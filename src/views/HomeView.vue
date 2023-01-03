@@ -21,15 +21,15 @@
           </div>
         </div>
         <div
-          class="flex flex-col px-10 lg:pr-40 gap-2 text-center lg:text-justify"
+          class="flex flex-col px-0 lg:px-10 lg:pr-40 gap-2  lg:text-justify"
         >
-          <h1 class="text-2xl lg:text-4xl font-bold text-slate-700">
+          <h1 class="text-2xl lg:text-4xl font-bold text-slate-700 text-center lg:text-justify">
             Syahidan Arrizaldy Sidik
           </h1>
-          <h2 class="text-xl font-semibold text-slate-700">
+          <h2 class="text-xl font-semibold text-slate-700 text-center lg:text-justify">
             Front End Engineer From Indonesia
           </h2>
-          <p class="text-base font-normal text-slate-600 mr-0 lg:mr-6">
+          <p class="text-base font-normal text-slate-600 mr-0 lg:mr-6 text-justify">
             Hi there, i'm a front end engineer from West Java, Indonesia with 3
             years of experience, another skill of mine is converting a cup of
             coffee into a bunch of code ☕
