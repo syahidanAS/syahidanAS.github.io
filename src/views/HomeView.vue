@@ -17,7 +17,7 @@
 </div>
 </div>
 
-<div class="py-32 w-10/12 mx-auto ">
+<div class="py-36 w-10/12 mx-auto ">
 <div class="flex flex-row-reverse items-center gap-20 ">
     <div class="flex flex-wrap ">
         <div class="flex flex-row items-center mx-auto">

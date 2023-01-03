@@ -29,9 +29,8 @@
 </div>
 </div>
 
+<footer-component/>
 
- 
-  
   
 </template>
 
