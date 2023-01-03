@@ -25,7 +25,7 @@
                 block              
                 border-2
                 border-slate-700
-                rounded-full
+                rounded-md
                 p-2
                 hover:bg-slate-700
                 hover:text-white
@@ -62,7 +62,7 @@
                 block              
                 border-2
                 border-slate-700
-                rounded-full
+                rounded-md
                 p-2
                 hover:bg-slate-700
                 hover:text-white
