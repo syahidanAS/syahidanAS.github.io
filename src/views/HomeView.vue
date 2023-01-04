@@ -216,7 +216,10 @@
           </p>
           <div class="text-sm text-slate-700 font-semibold">
             <h3>Stack:</h3>
-            <p>{{ item.stack }}</p>
+            <div class="flex flex-row gap-2">
+               <span class="bg-slate-300 border-slate-800 px-2 py-1 rounded-md " v-for="itemStack in item.stack" :key="itemStack.index">{{ itemStack }}</span>
+            </div>
+           
           </div>
           <div v-html="body"></div>
           <a
@@ -240,7 +243,7 @@
 
     <div class="flex flex-col w-full py-10 gap-2">
       <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
-        Recent Youtube Video
+        Video Youtube
       </h1>
       <iframe
         class="mx-auto w-full h-60 lg:w-[560px] lg:h-[316px]"
@@ -252,7 +255,7 @@
       ></iframe>
     </div>
     <h1 class="text-2xl font-bold text-slate-700 my-[40px] mx-auto">
-      Play the song that i love
+      Mainkan lagu favorit saya
     </h1>
     <div class="flex flex-col lg:flex-row mx-auto lg:gap-2 mb-7">
       <iframe
