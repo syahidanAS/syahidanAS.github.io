@@ -216,7 +216,7 @@
           </p>
           <div class="text-sm text-slate-700 font-semibold">
             <h3>Stack:</h3>
-            <div class="flex flex-row gap-2">
+            <div class="flex flex-wrap gap-2">
                <span class="bg-slate-300 border-slate-800 px-2 py-1 rounded-md " v-for="itemStack in item.stack" :key="itemStack.index">{{ itemStack }}</span>
             </div>
            
