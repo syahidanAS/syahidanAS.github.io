@@ -54,7 +54,7 @@
           >
             Halo, saya adalah full stack developer yang berasal dari Jawa Barat,
             Indonesia yang sudah berpengalaman selama 3 tahun. Kegiatan utama
-            saya adalah mengubah secangkir kopi menjadi kumpulan baris kode yang
+            saya adalah mengubah secangkir kopi menjadi kumpulan baris kode
             ☕
           </p>
         </div>
