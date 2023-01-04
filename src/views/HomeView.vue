@@ -259,6 +259,7 @@
 import tlc from "../assets/images/tlc.png";
 import bpr from "../assets/images/bpr.png";
 import attendance from "../assets/images/attendance.png";
+import weather from "../assets/images/weather.png";
 
 export default {
   data() {
@@ -287,6 +288,14 @@ export default {
           url: "https://drive.google.com/file/d/1-eHDWFkRD6FZQQHY6IUQ-QlqSlz3NfxF/view?usp=sharing",
           image: attendance,
           buttonStatus: "Demonstrasi Perangkat",
+        },
+                {
+          id: 4,
+          title: "Aplikasi Ramalan Cuaca",
+          desc: "Aplikasi web yang dapat menampilkan perkiraan cuaca dan cuaca saat ini di lokasi pada saat aplikasi tersebut dibuka ataupun lokasi manapun pada kolom pencarian menggunakan kombinasi teknik Reverse dan Forward Geocoding dan beberapa public api yang memungkinan pencarian perkiraan cuaca dan cuaca saat ini pada lokasi yang diinginkan",
+          url: "https://arzweather.netlify.app/",
+          image: weather,
+          buttonStatus: "Kunjungi Website",
         },
       ],
     };
