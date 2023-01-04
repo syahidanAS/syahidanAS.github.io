@@ -260,6 +260,7 @@ import tlc from "../assets/images/tlc.png";
 import bpr from "../assets/images/bpr.png";
 import attendance from "../assets/images/attendance.png";
 import weather from "../assets/images/weather.png";
+import piutang from "../assets/images/piutang.png";
 
 export default {
   data() {
@@ -289,13 +290,21 @@ export default {
           image: attendance,
           buttonStatus: "Demonstrasi Perangkat",
         },
-                {
+        {
           id: 4,
           title: "Aplikasi Ramalan Cuaca",
           desc: "Aplikasi web yang dapat menampilkan perkiraan cuaca dan cuaca saat ini di lokasi pada saat aplikasi tersebut dibuka ataupun lokasi manapun pada kolom pencarian menggunakan kombinasi teknik Reverse dan Forward Geocoding dan beberapa public api yang memungkinan pencarian perkiraan cuaca dan cuaca saat ini pada lokasi yang diinginkan",
           url: "https://arzweather.netlify.app/",
           image: weather,
           buttonStatus: "Kunjungi Website",
+        },
+        {
+          id: 5,
+          title: "Sistem Pengendalian Piutang Rumah Sakit",
+          desc: "Fungsi utama sistem ini adalah membantu bagian keuangan Rumah Sakit Khusus Paru Karawang dalam mengelola dan mengendalikan piutang rumah sakit. Sistem ini dapat menghasilkan beberapa lembar laporan diantaranya surat penagihan piutang, invoice, kwitansi pembayaran, laporan umur piutang, rekapitulasi piutang, kwitansi pembayaran, dan jurnal",
+          url: "#",
+          image: piutang,
+          buttonStatus: "Tidak ada demonstrasi",
         },
       ],
     };
