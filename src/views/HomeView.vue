@@ -20,92 +20,146 @@
             />
           </div>
         </div>
-        <div
-          class="flex flex-col px-0 lg:px-10 lg:pr-40 gap-2  lg:text-justify"
-        >
-          <h1 class="text-2xl lg:text-4xl font-bold text-slate-700 text-center lg:text-justify">
+        <div class="flex flex-col px-0 lg:px-10 lg:pr-40 gap-2 lg:text-justify">
+          <h1
+            class="
+              text-2xl
+              lg:text-4xl
+              font-bold
+              text-slate-700 text-center
+              lg:text-justify
+            "
+          >
             Syahidan Arrizaldy Sidik
           </h1>
-          <h2 class="text-xl font-semibold text-slate-700 text-center lg:text-justify">
-            Front End Engineer From Indonesia
+          <h2
+            class="
+              text-xl
+              font-semibold
+              text-slate-700 text-center
+              lg:text-justify
+            "
+          >
+            Full Stack Developer, dari Indonesia
           </h2>
-          <p class="text-base font-normal text-slate-600 mr-0 lg:mr-6 text-justify">
-            Hi there, i'm a front end engineer from West Java, Indonesia with 3
-            years of experience, another skill of mine is converting a cup of
-            coffee into a bunch of code ☕
+          <p
+            class="
+              text-base
+              font-normal
+              text-slate-600
+              mr-0
+              lg:mr-6
+              text-justify
+            "
+          >
+            Halo, saya adalah full stack developer yang berasal dari Jawa Barat,
+            Indonesia yang sudah berpengalaman selama 3 tahun. Kegiatan utama
+            saya adalah mengubah secangkir kopi menjadi kumpulan baris kode yang
+            ☕
           </p>
-          <div class="flex flex-col lg:flex-row items-center gap-2">
-            <h2 class="text-slate-700 font-semibold text-base">
-              Tech stack that I use:
-            </h2>
-            <div class="flex flex-wrap gap-2 justify-center">
-                          <span
-              class="
-                flex flex-row
-                items-center
-                gap-1
-                text-md
-                font-medium
-                mr-2
-                px-2.5
-                py-0.5
-                rounded
-                border-2 border-red-600
-                text-red-600
-              "
-            >
-              <img class="w-6" src="@/assets/laravel-logo.png" alt="" />
-              Laravel
-            </span>
-
-            <span
-              class="
-                flex flex-row
-                items-center
-                gap-1
-                text-md
-                font-medium
-                mr-2
-                px-2.5
-                py-0.5
-                rounded
-                border-2 border-emerald-600
-                text-emerald-600
-              "
-            >
-              <img class="w-6" src="@/assets/vuejs-logo.png" alt="" />
-              Vue.js
-            </span>
-
-            <span
-              class="
-                flex flex-row
-                items-center
-                gap-1
-                text-md
-                font-medium
-                mr-2
-                px-2.5
-                py-0.5
-                rounded
-                border-2 border-orange-600
-                text-orange-600
-              "
-            >
-              <img class="w-6" src="@/assets/codeigniter-logo.svg" alt="" />
-              Codeigniter
-            </span>
-
-            
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex flex-col gap-4 py-14 lg:py-20 w-10/12 mx-auto">
-      <h1 class="text-2xl font-bold text-slate-700 text-center my-8">
-        Recent Projects
+    <div class="flex flex-col items-center gap-4 mx-auto my-6">
+      <h1 class="text-2xl font-bold text-slate-700 text-center">
+        Stack yang saya gunakan
+      </h1>
+      <div class="flex flex-wrap gap-2 justify-center">
+        <a
+          class="
+            flex flex-row
+            items-center
+            gap-1
+            text-md
+            font-medium
+            mr-2
+            px-2.5
+            py-0.5
+            rounded
+            border-2 border-red-600
+            text-red-600
+            hover:bg-red-200
+            cursor-pointer
+          "
+          href="https://laravel.com/"
+          target="_blank"
+        >
+          <img class="w-6" src="@/assets/laravel-logo.png" alt="" />
+          Laravel
+        </a>
+
+        <a
+          class="
+            flex flex-row
+            items-center
+            gap-1
+            text-md
+            font-medium
+            mr-2
+            px-2.5
+            py-0.5
+            rounded
+            border-2 border-emerald-600
+            text-emerald-600
+            hover:bg-emerald-200
+          "
+          href="https://vuejs.org/"
+          target="_blank"
+        >
+          <img class="w-6" src="@/assets/vuejs-logo.png" alt="" />
+          Vue.js
+        </a>
+
+        <a
+          class="
+            flex flex-row
+            items-center
+            gap-1
+            text-md
+            font-medium
+            mr-2
+            px-2.5
+            py-0.5
+            rounded
+            border-2 border-red-700
+            text-red-700
+            hover:bg-red-200
+          "
+          href="https://nestjs.com/"
+          target="_blank"
+        >
+          <img class="w-6" src="@/assets/nestjs-logo.svg" alt="" />
+          Nest.js
+        </a>
+
+        <a
+          class="
+            flex flex-row
+            items-center
+            gap-1
+            text-md
+            font-medium
+            mr-2
+            px-2.5
+            py-0.5
+            rounded
+            border-2 border-orange-600
+            text-orange-600
+            hover:bg-orange-200
+          "
+          href="https://codeigniter.com/"
+          target="_blank"
+        >
+          <img class="w-6" src="@/assets/codeigniter-logo.svg" alt="" />
+          Codeigniter
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 py-14 lg:py-20 w-10/12 mx-auto my-6">
+      <h1 class="text-2xl font-bold text-slate-700 text-center">
+       Proyek
       </h1>
 
       <!-- The Bright -->
@@ -213,26 +267,26 @@ export default {
         {
           id: 1,
           title: "The Bright Learning Center",
-          desc: "The company Profile website is equipped with a Content Management System (CMS), and also has a back office web app with several features including new student registration, student and tutor attendance, student billing, and payroll for tutor.",
+          desc: "Proyek website company profile yang dilengkapi dengan Content Management System (CMS), juga pada proyek ini dilengkapi dengan sistem informasi back office dengan beberapa fitur utama antara lain pendaftaran siswa baru, absensi siswa dan tutor, billing siswa, dan payroll untuk tutor serta staff.",
           url: "https://thebrightcourse.com/",
           image: tlc,
-          buttonStatus: "Visit Site",
+          buttonStatus: "Kunjungi Website",
         },
         {
           id: 2,
-          title: "Bintang Pertiwi School",
-          desc: "The company Profile website is equipped with a Content Management System (CMS), and also quipped with a back office web app with several main features, namely student learning reports that can be used directly by parents of students",
+          title: "TK Bintang Pertiwi",
+          desc: "Proyek website company profile yang dilengkapi dengan Content Management System (CMS), selain itu proyek ini memiliki aplikasi web yang memungkinkan setiap guru dapat membuat laporan pembelajaran siswa dan nantinya dapat dilihat oleh orang tua siswa.",
           url: "https://tkbintangpertiwi.com/",
           image: bpr,
-          buttonStatus: "Visit Site",
+          buttonStatus: "Kunjungi Website",
         },
         {
           id: 3,
-          title: "Attendance System",
-          desc: "An attendance system that combines web application technology with the Internet of Things (IoT), combined with Radio-Frequency Identification (RFID) technology with a local network. this project used by PT Teknologi Cakra Internasional company",
+          title: "Sistem Absensi",
+          desc: "Sistem absensi pegawai dengan mekanisme pegawai melakukan tapping pada perangkat RFID dan hasil tapping tersebut akan ditransmisikan melalui wifi ke dalam server untuk proses pengolahan data secara lokal sehingga akhir laporan absensi tersebut dapat digunakan oleh HRD. Sistem ini diterapkan di PT Teknologi Cakra Internasional, yang berlokasi di Jl. Batununggal Indah IV No.45, Mengger, Kec. Bandung Kidul, Kota Bandung, Jawa Barat 40267 ",
           url: "https://drive.google.com/file/d/1-eHDWFkRD6FZQQHY6IUQ-QlqSlz3NfxF/view?usp=sharing",
           image: attendance,
-          buttonStatus: "Device Demonstration",
+          buttonStatus: "Demonstrasi Perangkat",
         },
       ],
     };

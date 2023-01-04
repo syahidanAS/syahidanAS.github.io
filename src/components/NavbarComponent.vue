@@ -7,7 +7,6 @@
       lg:px-24
       py-2.5
       rounded
-      dark:bg-gray-900
       shadow-md shadow-slate-200
       sticky
       top-0
@@ -51,9 +50,6 @@
             md:font-medium
             md:border-0
             md:bg-white
-            dark:bg-gray-800
-            md:dark:bg-gray-900
-            dark:border-gray-700
           "
         >
           <li>
