@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col h-full items-center py-20">
-    <h1 class="text-2xl lg:text-4xl font-bold text-slate-700">CONTACT ME</h1>
+  <div class="flex flex-col h-full items-center py-4 mx-auto mb-20">
+    <h1 class="text-2xl lg:text-4xl font-bold text-slate-700 ">CONTACT ME</h1>
     <div
       class="
         flex flex-col

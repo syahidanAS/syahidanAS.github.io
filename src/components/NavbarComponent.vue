@@ -5,7 +5,6 @@
       border-gray-200
       px-4
       lg:px-24
-      py-2.5
       rounded
       shadow-md shadow-slate-200
       sticky
@@ -25,7 +24,7 @@
                 border-2
                 border-slate-700
                 rounded-md
-                p-2
+                px-2
                 hover:bg-slate-700
                 hover:text-white
                 lg:hidden

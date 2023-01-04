@@ -233,10 +233,26 @@
               hover:bg-slate-700 hover:text-white
               text-center
             "
+            v-if="item.isClicked"
             :href="item.url"
             target="_blank"
-            >{{ item.buttonStatus }}</a
-          >
+            >{{ item.buttonStatus }}</a>
+
+            <a
+            class="
+              border-2
+              font-semibold
+              text-slate-700
+              bg-slate-300
+              p-2
+              rounded-md
+              text-center
+            "
+            v-else
+            disabled
+            >Tidak Tersedia</a>
+
+            
         </div>
       </div>
     </div>
@@ -305,7 +321,8 @@ export default {
             'Nuxt.js',
             'Laravel',
             'Mysql'
-          ]
+          ],
+          isClicked: true
         },
         {
           id: 2,
@@ -319,7 +336,8 @@ export default {
             'Vue.js',
             'Codeigniter',
             'Postgresql'
-          ]
+          ],
+          isClicked: true
         },
         {
           id: 3,
@@ -333,7 +351,8 @@ export default {
             'Mysql',
             'NodeMCU ESP8266',
             'RFID'
-          ]
+          ],
+          isClicked: true
         },
         {
           id: 4,
@@ -344,7 +363,8 @@ export default {
           buttonStatus: "Kunjungi Website",
           stack:[
             'Vue.js',
-          ]
+          ],
+          isClicked: true
         },
         {
           id: 5,
@@ -356,7 +376,8 @@ export default {
           stack:[
             'Laravel',
             'Mysql',
-          ]
+          ],
+          isClicked: false
         },
       ],
     };
