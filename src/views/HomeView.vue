@@ -154,6 +154,29 @@
           <img class="w-6" src="@/assets/codeigniter-logo.svg" alt="" />
           Codeigniter
         </a>
+
+
+        <a
+          class="
+            flex flex-row
+            items-center
+            gap-1
+            text-md
+            font-medium
+            mr-2
+            px-2.5
+            py-0.5
+            rounded
+            border-2 border-emerald-600
+            text-emerald-600
+            hover:bg-emerald-200
+          "
+          href="https://nuxtjs.org/"
+          target="_blank"
+        >
+          <img class="w-6" src="@/assets/nuxtjs-logo.png" alt="" />
+          Nuxt.js
+        </a>
       </div>
     </div>
 
@@ -162,9 +185,8 @@
        Proyek
       </h1>
 
-      <!-- The Bright -->
       <div
-        class="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-20"
+        class="flex flex-col lg:flex-row-reverse gap-4 lg:gap-20"
         v-for="item in portfolio"
         :key="item.id"
       >
@@ -192,7 +214,10 @@
           >
             {{ item.desc }}
           </p>
-
+          <div class="text-sm text-slate-700 font-semibold">
+            <h3>Stack:</h3>
+            <p>{{ item.stack }}</p>
+          </div>
           <div v-html="body"></div>
           <a
             class="
@@ -273,6 +298,11 @@ export default {
           url: "https://thebrightcourse.com/",
           image: tlc,
           buttonStatus: "Kunjungi Website",
+          stack:[
+            'Nuxt.js',
+            'Laravel',
+            'Mysql'
+          ]
         },
         {
           id: 2,
@@ -281,6 +311,12 @@ export default {
           url: "https://tkbintangpertiwi.com/",
           image: bpr,
           buttonStatus: "Kunjungi Website",
+          stack:[
+            'Nuxt.js',
+            'Vue.js',
+            'Codeigniter',
+            'Postgresql'
+          ]
         },
         {
           id: 3,
@@ -289,6 +325,12 @@ export default {
           url: "https://drive.google.com/file/d/1-eHDWFkRD6FZQQHY6IUQ-QlqSlz3NfxF/view?usp=sharing",
           image: attendance,
           buttonStatus: "Demonstrasi Perangkat",
+          stack:[
+            'Codeigniter',
+            'Mysql',
+            'NodeMCU ESP8266',
+            'RFID'
+          ]
         },
         {
           id: 4,
@@ -297,14 +339,21 @@ export default {
           url: "https://arzweather.netlify.app/",
           image: weather,
           buttonStatus: "Kunjungi Website",
+          stack:[
+            'Vue.js',
+          ]
         },
         {
           id: 5,
-          title: "Sistem Pengendalian Piutang Rumah Sakit",
+          title: "Sistem Pengendalian Piutang RS",
           desc: "Fungsi utama sistem ini adalah membantu bagian keuangan Rumah Sakit Khusus Paru Karawang dalam mengelola dan mengendalikan piutang rumah sakit. Sistem ini dapat menghasilkan beberapa lembar laporan diantaranya surat penagihan piutang, invoice, kwitansi pembayaran, laporan umur piutang, rekapitulasi piutang, kwitansi pembayaran, dan jurnal",
           url: "#",
           image: piutang,
-          buttonStatus: "Tidak ada demonstrasi",
+          buttonStatus: "Tidak tersedia",
+          stack:[
+            'Laravel',
+            'Mysql',
+          ]
         },
       ],
     };
