@@ -366,19 +366,19 @@ export default {
           ],
           isClicked: true
         },
-        // {
-        //   id: 5,
-        //   title: "Sistem Pengendalian Piutang RS",
-        //   desc: "Fungsi utama sistem ini adalah membantu bagian keuangan Rumah Sakit Khusus Paru Karawang dalam mengelola dan mengendalikan piutang rumah sakit. Sistem ini dapat menghasilkan beberapa lembar laporan diantaranya surat penagihan piutang, invoice, kwitansi pembayaran, laporan umur piutang, rekapitulasi piutang, kwitansi pembayaran, dan jurnal",
-        //   url: "#",
-        //   image: piutang,
-        //   buttonStatus: "Tidak tersedia",
-        //   stack:[
-        //     'Laravel',
-        //     'Mysql',
-        //   ],
-        //   isClicked: false
-        // },
+        {
+          id: 5,
+          title: "Sistem Pengendalian Piutang RS",
+          desc: "Fungsi utama sistem ini adalah membantu bagian keuangan Rumah Sakit Khusus Paru Karawang dalam mengelola dan mengendalikan piutang rumah sakit. Sistem ini dapat menghasilkan beberapa lembar laporan diantaranya surat penagihan piutang, invoice, kwitansi pembayaran, laporan umur piutang, rekapitulasi piutang, kwitansi pembayaran, dan jurnal",
+          url: "#",
+          image: piutang,
+          buttonStatus: "Tidak tersedia",
+          stack:[
+            'Laravel',
+            'Mysql',
+          ],
+          isClicked: false
+        },
       ],
     };
   },
