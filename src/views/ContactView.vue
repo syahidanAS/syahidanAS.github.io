@@ -212,7 +212,7 @@ export default {
           self.subject = null;
           self.message = null;
           setTimeout(() => (self.isShowing = false), 2000);
-          window.location.href = '/';
+          grecaptcha.reset();
         })
         .catch(function (error) {
           self.isLoading = false;
