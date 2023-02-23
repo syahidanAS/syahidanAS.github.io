@@ -51,13 +51,23 @@
               mr-0
               lg:mr-6
               text-justify
-            "
-          >
+            ">
             Halo, saya adalah full stack developer yang berasal dari Jawa Barat,
             Indonesia yang sudah berpengalaman selama 3 tahun. Kegiatan utama
             saya adalah mengubah secangkir kopi menjadi kumpulan baris kode
             ☕
           </p>
+          <span             
+          class="
+              text-lg
+              font-normal
+              text-slate-600
+              mr-0
+              lg:mr-6
+              text-justify
+            ">
+              Saat ini saya bekerja di <a href="https://goo.gl/maps/ZgbxAG8z5gq53nUv9" target="_blank"><b>Dinas Kesehatan Provinsi DKI Jakarta</b></a> sebagai web programmer
+            </span>
         </div>
       </div>
     </div>
