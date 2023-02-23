@@ -66,6 +66,7 @@
               lg:mr-6
               text-justify
             ">
+             <!-- Deploy -->
               Saat ini saya bekerja di <a href="https://goo.gl/maps/ZgbxAG8z5gq53nUv9" target="_blank"><b>Dinas Kesehatan Provinsi DKI Jakarta</b></a> sebagai web programmer
             </span>
         </div>
