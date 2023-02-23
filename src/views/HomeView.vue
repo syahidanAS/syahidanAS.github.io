@@ -1,4 +1,5 @@
 <template>
+<!-- Deploy -->
   <div class="flex flex-col">
     <div class="py-10 lg:py-10 w-10/12 mx-auto">
       <div class="flex flex-col md:flex-row items-center">
