@@ -53,8 +53,8 @@
               text-justify
             ">
             Halo, saya adalah full stack developer yang berasal dari Jawa Barat,
-            Indonesia yang sudah berpengalaman selama 3 tahun. Kegiatan utama
-            saya adalah mengubah secangkir kopi menjadi kumpulan baris kode
+            Indonesia yang sudah berpengalaman selama 3 tahun. Saat ini saya bekerja sebagai Full Stack Web Developer di Dinas Kesehatan Provinsi DKI Jakarta.
+            Kegiatan utama saya adalah mengubah secangkir kopi menjadi kumpulan baris kode dan bermain musik
             ☕
           </p>
           <!-- <span             
@@ -317,13 +317,43 @@ import bpr from "../assets/images/bpr.png";
 import attendance from "../assets/images/attendance.png";
 import weather from "../assets/images/weather.png";
 import piutang from "../assets/images/piutang.png";
+import sdmk from "../assets/images/sdmk.png"
+import skrining from "../assets/images/skrining.png"
 
 export default {
   data() {
     return {
       portfolio: [
+          {
+          id: 0,
+          title: "Aplikasi Skrining Kesehatan (Web App)",
+          desc: "Aplikasi ini digunakan untuk pencatatan skrining yang diinisiasi oleh bidang PMPTM, aplikasi ini digunakan dalam event Challenge Downgrade Ukuran Bajumu",
+          url: "https://dinkes.jakarta.go.id/challenge",
+          image: skrining,
+          buttonStatus: "Kunjungi Website",
+          stack:[
+            'Laravel',
+            'Jquery',
+            'Mysql'
+          ],
+          isClicked: true
+        },
         {
           id: 1,
+          title: "SI Sumber Daya Manusia Kesehatan (DKI)",
+          desc: "Sistem informasi yang digunakan untuk mengelola seluruh tenaga kesehatan di Provinsi DKI Jakarta, sistem ini merupakan Sistem Yang digunakan oleh Dinas Kesehatan Provinsi DKI Jakarta",
+          url: "#",
+          image: sdmk,
+          buttonStatus: "Tidak tersedia",
+          stack:[
+            'Laravel',
+            'Jquery',
+            'Mysql'
+          ],
+          isClicked: false
+        },
+        {
+          id: 2,
           title: "The Bright Learning Center",
           desc: "Proyek website company profile yang dilengkapi dengan Content Management System (CMS), juga pada proyek ini dilengkapi dengan sistem informasi back office dengan beberapa fitur utama antara lain pendaftaran siswa baru, absensi siswa dan tutor, billing siswa, dan payroll untuk tutor serta staff.",
           url: "https://thebrightcourse.com/",
@@ -337,7 +367,7 @@ export default {
           isClicked: true
         },
         {
-          id: 2,
+          id: 3,
           title: "TK Bintang Pertiwi",
           desc: "Proyek website company profile yang dilengkapi dengan Content Management System (CMS), selain itu proyek ini memiliki aplikasi web yang memungkinkan setiap guru dapat membuat laporan pembelajaran siswa dan nantinya dapat dilihat oleh orang tua siswa.",
           url: "https://tkbintangpertiwi.com/",
@@ -352,7 +382,7 @@ export default {
           isClicked: true
         },
         {
-          id: 3,
+          id: 4,
           title: "Sistem Absensi",
           desc: "Sistem absensi pegawai dengan mekanisme pegawai melakukan tapping pada perangkat RFID dan hasil tapping tersebut akan ditransmisikan melalui wifi ke dalam server untuk proses pengolahan data secara lokal sehingga akhir laporan absensi tersebut dapat digunakan oleh HRD. Sistem ini diterapkan di PT Teknologi Cakra Internasional, yang berlokasi di Jl. Batununggal Indah IV No.45, Mengger, Kec. Bandung Kidul, Kota Bandung, Jawa Barat 40267 ",
           url: "https://drive.google.com/file/d/1-eHDWFkRD6FZQQHY6IUQ-QlqSlz3NfxF/view?usp=sharing",
@@ -367,7 +397,7 @@ export default {
           isClicked: true
         },
         {
-          id: 4,
+          id: 5,
           title: "Aplikasi Ramalan Cuaca",
           desc: "Aplikasi web yang dapat menampilkan perkiraan cuaca dan cuaca saat ini di lokasi pada saat aplikasi tersebut dibuka ataupun lokasi manapun pada kolom pencarian menggunakan kombinasi teknik Reverse dan Forward Geocoding dan beberapa public api yang memungkinan pencarian perkiraan cuaca dan cuaca saat ini pada lokasi yang diinginkan",
           url: "https://arzweather.netlify.app/",
@@ -379,7 +409,7 @@ export default {
           isClicked: true
         },
         {
-          id: 5,
+          id: 6,
           title: "Sistem Pengendalian Piutang RS",
           desc: "Fungsi utama sistem ini adalah membantu bagian keuangan Rumah Sakit Khusus Paru Karawang dalam mengelola dan mengendalikan piutang rumah sakit. Sistem ini dapat menghasilkan beberapa lembar laporan diantaranya surat penagihan piutang, invoice, kwitansi pembayaran, laporan umur piutang, rekapitulasi piutang, kwitansi pembayaran, dan jurnal",
           url: "#",
