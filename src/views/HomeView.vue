@@ -269,6 +269,33 @@
       </div>
     </div>
 
+      <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
+        Galeri Foto
+      </h1>
+    <div class="container mx-auto px-4 mb-2">
+      <div class="grid grid-cols-2 gap-4 mt-10">
+        <div class="bg-cover rounded-md" 
+         :style="{ backgroundImage: 'url(' + img_rakerkesda + ')' }">
+         <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
+          <h4 class="text-base font-bold text-slate-800 text-center">Rakerkesda DKI Jakarta 2023</h4>
+         </div>
+        </div>
+        <div class="bg-cover rounded-md" 
+          :style="{ backgroundImage: 'url(' + img_satusehatdki + ')' }">
+          <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
+          <h4 class="text-base font-bold text-slate-800 text-center">Rapat Interoperability Layer DKI</h4>
+         </div>
+        </div>
+        <div class="bg-cover rounded-md"   
+        :style="{ backgroundImage: 'url(' + img_wisuda + ')' }">
+          <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
+            <h4 class="text-base font-bold text-slate-800 text-center">Penghargaan Dengan Skripsi Terbaik </h4>
+         </div>
+        </div>
+
+      </div>
+    </div>
+
     <div class="flex flex-col w-full py-10 gap-2">
       <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
         Video Youtube
@@ -317,12 +344,18 @@ import bpr from "../assets/images/bpr.png";
 import attendance from "../assets/images/attendance.png";
 import weather from "../assets/images/weather.png";
 import piutang from "../assets/images/piutang.png";
-import sdmk from "../assets/images/sdmk.png"
-import skrining from "../assets/images/skrining.png"
+import sdmk from "../assets/images/sdmk.png";
+import skrining from "../assets/images/skrining.png";
+import wisuda from '../assets/images/wisuda.jpg';
+import rakerkesda from '../assets/images/rakerkesda.jpg';
+import satusehatdki from '../assets/images/satusehatdki.jpg';
 
 export default {
   data() {
     return {
+      img_wisuda: wisuda,
+      img_rakerkesda: rakerkesda,
+      img_satusehatdki: satusehatdki,
       portfolio: [
           {
           id: 0,
@@ -426,3 +459,76 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (min-width:320px)  { 
+.bg-cover:hover {
+  transform: scale(1.30);
+  transition: transform 0.3s ease-in-out;
+}
+ }
+
+@media (min-width:961px) { 
+  .bg-cover:hover {
+  transform: scale(1.60);
+  transition: transform 0.3s ease-in-out;
+}
+ }
+
+
+</style>
