@@ -289,7 +289,7 @@
         <div class="bg-cover rounded-md"   
         :style="{ backgroundImage: 'url(' + img_wisuda + ')' }">
           <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
-            <h4 class="text-base font-bold text-slate-800 text-center">Penghargaan Dengan Skripsi Terbaik </h4>
+            <h4 class="text-base font-bold text-slate-800 text-center">Penghargaan Skripsi Terbaik </h4>
          </div>
         </div>
 
