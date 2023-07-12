@@ -518,7 +518,7 @@ export default {
 
 @media (min-width:320px)  { 
 .bg-cover:hover {
-  transform: scale(1.30);
+  transform: scale(1.13);
   transition: transform 0.3s ease-in-out;
 }
  }
