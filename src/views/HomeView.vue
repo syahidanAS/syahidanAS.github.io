@@ -364,11 +364,7 @@ export default {
           url: "https://dinkes.jakarta.go.id/challenge",
           image: skrining,
           buttonStatus: "Kunjungi Website",
-          stack:[
-            'Laravel',
-            'Jquery',
-            'Mysql'
-          ],
+          stack:['Laravel','Jquery','Mysql'],
           isClicked: true
         },
         {
@@ -378,11 +374,7 @@ export default {
           url: "#",
           image: sdmk,
           buttonStatus: "Tidak tersedia",
-          stack:[
-            'Laravel',
-            'Jquery',
-            'Mysql'
-          ],
+          stack:['Laravel','Jquery','Mysql'],
           isClicked: false
         },
         {
@@ -392,11 +384,7 @@ export default {
           url: "https://thebrightcourse.com/",
           image: tlc,
           buttonStatus: "Kunjungi Website",
-          stack:[
-            'Nuxt.js',
-            'Laravel',
-            'Mysql'
-          ],
+          stack:['Nuxt.js','Laravel','Mysql'],
           isClicked: true
         },
         {
@@ -406,12 +394,7 @@ export default {
           url: "https://tkbintangpertiwi.com/",
           image: bpr,
           buttonStatus: "Kunjungi Website",
-          stack:[
-            'Nuxt.js',
-            'Vue.js',
-            'Codeigniter',
-            'Postgresql'
-          ],
+          stack:['Nuxt.js','Vue.js','Codeigniter','Postgresql'],
           isClicked: true
         },
         {
