@@ -1,50 +1,39 @@
 <template>
-<!-- Deploy -->
+  <!-- Deploy -->
   <div class="flex flex-col">
     <div class="py-10 lg:py-10 w-10/12 mx-auto">
       <div class="flex flex-col md:flex-row items-center">
         <div class="flex flex-wrap">
-          <div
-            class="
+          <div class="
               flex flex-row
               items-center
               mx-auto
               border-8 border-slate-800
               rounded-full
               p-1
-            "
-          >
-            <img
-              class="w-28 lg:w-[400px] rounded-full overflow-hidden"
-              src="@/assets/images/ava.jpg"
-              alt="ava"
-            />
+            ">
+            <img class="w-28 lg:w-[400px] rounded-full overflow-hidden" src="@/assets/images/ava.jpg" alt="ava" />
           </div>
         </div>
         <div class="flex flex-col px-0 lg:px-10 lg:pr-40 gap-2 lg:text-justify">
-          <h1
-            class="
+          <h1 class="
               text-2xl
               lg:text-4xl
               font-bold
               text-slate-700 text-center
               lg:text-justify
-            "
-          >
+            ">
             Syahidan Arrizaldy Sidik
           </h1>
-          <h2
-            class="
+          <h2 class="
               text-xl
               font-semibold
               text-slate-700 text-center
               lg:text-justify
-            "
-          >
+            ">
             Full Stack Developer, dari Indonesia
           </h2>
-          <p
-            class="
+          <p class="
               text-base
               font-normal
               text-slate-600
@@ -53,7 +42,8 @@
               text-justify
             ">
             Halo, saya adalah full stack developer yang berasal dari Jawa Barat,
-            Indonesia yang sudah berpengalaman selama 3 tahun. Saat ini saya bekerja sebagai Full Stack Web Developer di Dinas Kesehatan Provinsi DKI Jakarta.
+            Indonesia yang sudah berpengalaman selama 3 tahun. Saat ini saya bekerja sebagai Full Stack Web Developer di
+            Dinas Kesehatan Provinsi DKI Jakarta.
             Kegiatan utama saya adalah mengubah secangkir kopi menjadi kumpulan baris kode dan bermain musik
             ☕
           </p>
@@ -78,8 +68,7 @@
         Stack yang saya gunakan
       </h1>
       <div class="flex flex-wrap gap-2 justify-center">
-        <a
-          class="
+        <a class="
             flex flex-row
             items-center
             gap-1
@@ -93,16 +82,12 @@
             text-red-600
             hover:bg-red-200
             cursor-pointer
-          "
-          href="https://laravel.com/"
-          target="_blank"
-        >
+          " href="https://laravel.com/" target="_blank">
           <img class="w-6" src="@/assets/laravel-logo.png" alt="" />
           Laravel
         </a>
 
-        <a
-          class="
+        <a class="
             flex flex-row
             items-center
             gap-1
@@ -115,16 +100,12 @@
             border-2 border-emerald-600
             text-emerald-600
             hover:bg-emerald-200
-          "
-          href="https://vuejs.org/"
-          target="_blank"
-        >
+          " href="https://vuejs.org/" target="_blank">
           <img class="w-6" src="@/assets/vuejs-logo.png" alt="" />
           Vue.js
         </a>
 
-        <a
-          class="
+        <a class="
             flex flex-row
             items-center
             gap-1
@@ -137,16 +118,12 @@
             border-2 border-red-700
             text-red-700
             hover:bg-red-200
-          "
-          href="https://nestjs.com/"
-          target="_blank"
-        >
+          " href="https://nestjs.com/" target="_blank">
           <img class="w-6" src="@/assets/nestjs-logo.svg" alt="" />
           Nest.js
         </a>
 
-        <a
-          class="
+        <a class="
             flex flex-row
             items-center
             gap-1
@@ -159,17 +136,13 @@
             border-2 border-orange-600
             text-orange-600
             hover:bg-orange-200
-          "
-          href="https://codeigniter.com/"
-          target="_blank"
-        >
+          " href="https://codeigniter.com/" target="_blank">
           <img class="w-6" src="@/assets/codeigniter-logo.svg" alt="" />
           Codeigniter
         </a>
 
 
-        <a
-          class="
+        <a class="
             flex flex-row
             items-center
             gap-1
@@ -182,10 +155,7 @@
             border-2 border-emerald-600
             text-emerald-600
             hover:bg-emerald-200
-          "
-          href="https://nuxtjs.org/"
-          target="_blank"
-        >
+          " href="https://nuxtjs.org/" target="_blank">
           <img class="w-6" src="@/assets/nuxtjs-logo.png" alt="" />
           Nuxt.js
         </a>
@@ -194,48 +164,38 @@
 
     <div class="flex flex-col gap-4 py-14 lg:py-20 w-10/12 mx-auto my-6">
       <h1 class="text-2xl font-bold text-slate-700 text-center">
-       Proyek
+        Proyek
       </h1>
 
-      <div
-        class="flex flex-col lg:flex-row-reverse gap-4 lg:gap-20"
-        v-for="item in portfolio"
-        :key="item.id"
-      >
+      <div class="flex flex-col lg:flex-row-reverse gap-4 lg:gap-20" v-for="item in portfolio" :key="item.id">
         <div class="flex flex-wrap">
           <div class="flex flex-row items-center mx-auto">
             <img class="w-[500px] rounded-md" :src="item.image" alt="ava" />
           </div>
         </div>
         <div class="flex flex-col gap-2">
-          <a
-            class="text-2xl font-semibold text-slate-700 hover:text-sky-900"
-            :href="item.url"
-            target="_blank"
-            >{{ item.title }}</a
-          >
-          <p
-            class="
+          <a class="text-2xl font-semibold text-slate-700 hover:text-sky-900" :href="item.url" target="_blank">{{
+            item.title }}</a>
+          <p class="
               text-base
               font-normal
               text-slate-600 text-justify
               max-w-2xl
               w-full
               lg:w-96
-            "
-          >
+            ">
             {{ item.desc }}
           </p>
           <div class="text-sm text-slate-700 font-semibold">
             <h3>Stack:</h3>
             <div class="flex flex-wrap gap-2">
-               <span class="bg-slate-300 border-slate-800 px-2 py-1 rounded-md " v-for="itemStack in item.stack" :key="itemStack.index">{{ itemStack }}</span>
+              <span class="bg-slate-300 border-slate-800 px-2 py-1 rounded-md " v-for="itemStack in item.stack"
+                :key="itemStack.index">{{ itemStack }}</span>
             </div>
-           
+
           </div>
           <div v-html="body"></div>
-          <a
-            class="
+          <a class="
               border-2
               font-semibold
               text-slate-700
@@ -244,14 +204,9 @@
               rounded-md
               hover:bg-slate-700 hover:text-white
               text-center
-            "
-            v-if="item.isClicked"
-            :href="item.url"
-            target="_blank"
-            >{{ item.buttonStatus }}</a>
+            " v-if="item.isClicked" :href="item.url" target="_blank">{{ item.buttonStatus }}</a>
 
-            <a
-            class="
+          <a class="
               border-2
               font-semibold
               text-slate-700
@@ -259,81 +214,63 @@
               p-2
               rounded-md
               text-center
-            "
-            v-else
-            disabled
-            >Tidak Tersedia</a>
+            " v-else disabled>Tidak Tersedia</a>
 
-            
+
         </div>
       </div>
     </div>
 
-      <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
-        Galeri Foto
-      </h1>
-    <div class="container mx-auto px-4 mb-2">
+    <!-- <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
+      Galeri Foto
+    </h1> -->
+    <!-- <div class="container mx-auto px-4 mb-2">
       <div class="grid grid-cols-2 gap-4 mt-10">
-        <div class="bg-cover rounded-md" 
-         :style="{ backgroundImage: 'url(' + img_rakerkesda + ')' }">
-         <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
-          <h4 class="text-base font-bold text-slate-800 text-center">Rakerkesda DKI Jakarta 2023</h4>
-         </div>
-        </div>
-        <div class="bg-cover rounded-md" 
-          :style="{ backgroundImage: 'url(' + img_satusehatdki + ')' }">
+        <div class="bg-cover rounded-md" :style="{ backgroundImage: 'url(' + img_rakerkesda + ')' }">
           <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
-          <h4 class="text-base font-bold text-slate-800 text-center">Rapat Interoperability Layer DKI</h4>
-         </div>
+            <h4 class="text-base font-bold text-slate-800 text-center">Rakerkesda DKI Jakarta 2023</h4>
+          </div>
         </div>
-        <div class="bg-cover rounded-md"   
-        :style="{ backgroundImage: 'url(' + img_wisuda + ')' }">
+        <div class="bg-cover rounded-md" :style="{ backgroundImage: 'url(' + img_satusehatdki + ')' }">
+          <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
+            <h4 class="text-base font-bold text-slate-800 text-center">Rapat Interoperability Layer DKI</h4>
+          </div>
+        </div>
+        <div class="bg-cover rounded-md" :style="{ backgroundImage: 'url(' + img_wisuda + ')' }">
           <div class="mx-5 px-2 rounded-lg" style="background: #ffffff; margin-top: 45%;">
             <h4 class="text-base font-bold text-slate-800 text-center">Penghargaan Skripsi Terbaik </h4>
-         </div>
+          </div>
         </div>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="flex flex-col w-full py-10 gap-2">
       <h1 class="text-2xl font-bold text-slate-700 my-4 mx-auto">
         Video Youtube
       </h1>
-      <iframe
-        class="mx-auto w-full h-60 lg:w-[560px] lg:h-[316px]"
-        src="https://www.youtube.com/embed/kbgdptfdZlk?controls=0&amp;start=12"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <iframe class="mx-auto w-full h-60 lg:w-[560px] lg:h-[316px]" width="560" height="315" src="https://www.youtube.com/embed/PHKBiS-4coY?si=sbKENwlA1RNY9MJL"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <!-- <iframe class="mx-auto w-full h-60 lg:w-[560px] lg:h-[316px]"
+        src="https://www.youtube.com/embed/kbgdptfdZlk?controls=0&amp;start=12" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe> -->
     </div>
     <h1 class="text-2xl font-bold text-slate-700 my-[40px] mx-auto">
       Mainkan lagu favorit saya
     </h1>
     <div class="flex flex-col lg:flex-row mx-auto lg:gap-2 mb-7">
-      <iframe
-        style="border-radius: 12px"
-        class="w-full aspect-video"
+      <iframe style="border-radius: 12px" class="w-full aspect-video"
         src="https://open.spotify.com/embed/track/6uBhi9gBXWjanegOb2Phh0?utm_source=generator&theme=0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        style="border-radius: 12px"
-        class="w-full aspect-video"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius: 12px" class="w-full aspect-video"
         src="https://open.spotify.com/embed/track/4Ce37cRWvM1vIGGynKcs22?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        style="border-radius: 12px"
-        class="w-full aspect-video"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius: 12px" class="w-full aspect-video"
         src="https://open.spotify.com/embed/track/4mzP5mHkRvGxdhdGdAH7EJ?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
 </template>
@@ -357,14 +294,14 @@ export default {
       img_rakerkesda: rakerkesda,
       img_satusehatdki: satusehatdki,
       portfolio: [
-          {
+        {
           id: 0,
           title: "Aplikasi Skrining Kesehatan (Web App)",
           desc: "Aplikasi ini digunakan untuk pencatatan skrining yang diinisiasi oleh bidang PMPTM, aplikasi ini digunakan dalam event Challenge Downgrade Ukuran Bajumu",
           url: "https://dinkes.jakarta.go.id/challenge",
           image: skrining,
           buttonStatus: "Kunjungi Website",
-          stack:['Laravel','Jquery','Mysql'],
+          stack: ['Laravel', 'Jquery', 'Mysql'],
           isClicked: true
         },
         {
@@ -374,7 +311,7 @@ export default {
           url: "#",
           image: sdmk,
           buttonStatus: "Tidak tersedia",
-          stack:['Laravel','Jquery','Mysql'],
+          stack: ['Laravel', 'Jquery', 'Mysql'],
           isClicked: false
         },
         {
@@ -384,7 +321,7 @@ export default {
           url: "https://thebrightcourse.com/",
           image: tlc,
           buttonStatus: "Kunjungi Website",
-          stack:['Nuxt.js','Laravel','Mysql'],
+          stack: ['Nuxt.js', 'Laravel', 'Mysql'],
           isClicked: true
         },
         {
@@ -394,7 +331,7 @@ export default {
           url: "https://tkbintangpertiwi.com/",
           image: bpr,
           buttonStatus: "Kunjungi Website",
-          stack:['Nuxt.js','Vue.js','Codeigniter','Postgresql'],
+          stack: ['Nuxt.js', 'Vue.js', 'Codeigniter', 'Postgresql'],
           isClicked: true
         },
         {
@@ -404,7 +341,7 @@ export default {
           url: "https://drive.google.com/file/d/1-eHDWFkRD6FZQQHY6IUQ-QlqSlz3NfxF/view?usp=sharing",
           image: attendance,
           buttonStatus: "Demonstrasi Perangkat",
-          stack:[
+          stack: [
             'Codeigniter',
             'Mysql',
             'NodeMCU ESP8266',
@@ -419,7 +356,7 @@ export default {
           url: "https://arzweather.netlify.app/",
           image: weather,
           buttonStatus: "Kunjungi Website",
-          stack:[
+          stack: [
             'Vue.js',
           ],
           isClicked: true
@@ -431,7 +368,7 @@ export default {
           url: "#",
           image: piutang,
           buttonStatus: "Tidak tersedia",
-          stack:[
+          stack: [
             'Laravel',
             'Mysql',
           ],
@@ -446,13 +383,25 @@ export default {
 <style scoped>
 /* Animations */
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  0% { transform: translateY(50px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .bg-gray-100 {
@@ -499,19 +448,16 @@ export default {
   cursor: pointer;
 }
 
-@media (min-width:320px)  { 
-.bg-cover:hover {
-  transform: scale(1.13);
-  transition: transform 0.3s ease-in-out;
-}
- }
-
-@media (min-width:961px) { 
+@media (min-width:320px) {
   .bg-cover:hover {
-  transform: scale(1.60);
-  transition: transform 0.3s ease-in-out;
+    transform: scale(1.13);
+    transition: transform 0.3s ease-in-out;
+  }
 }
- }
 
-
-</style>
+@media (min-width:961px) {
+  .bg-cover:hover {
+    transform: scale(1.60);
+    transition: transform 0.3s ease-in-out;
+  }
+}</style>
