@@ -31,7 +31,7 @@
               text-slate-700 text-center
               lg:text-justify
             ">
-            Full Stack Developer, dari Indonesia
+            Full Stack Web developer
           </h2>
           <p class="
               text-base
@@ -42,8 +42,7 @@
               text-justify
             ">
             Halo, saya adalah full stack developer yang berasal dari Jawa Barat,
-            Indonesia yang sudah berpengalaman selama 3 tahun. Saat ini saya bekerja sebagai Full Stack Web Developer di
-            Dinas Kesehatan Provinsi DKI Jakarta.
+            Indonesia yang sudah berpengalaman selama 3 tahun.
             Kegiatan utama saya adalah mengubah secangkir kopi menjadi kumpulan baris kode dan bermain musik
             ☕
           </p>
@@ -123,7 +122,7 @@
           Nest.js
         </a>
 
-        <a class="
+        <!-- <a class="
             flex flex-row
             items-center
             gap-1
@@ -139,7 +138,7 @@
           " href="https://codeigniter.com/" target="_blank">
           <img class="w-6" src="@/assets/codeigniter-logo.svg" alt="" />
           Codeigniter
-        </a>
+        </a> -->
 
 
         <a class="
@@ -164,7 +163,7 @@
 
     <div class="flex flex-col gap-4 py-14 lg:py-20 w-10/12 mx-auto my-6">
       <h1 class="text-2xl font-bold text-slate-700 text-center">
-        Proyek
+        PROYEK
       </h1>
 
       <div class="flex flex-col lg:flex-row-reverse gap-4 lg:gap-20" v-for="item in portfolio" :key="item.id">
@@ -286,6 +285,7 @@ import skrining from "../assets/images/skrining.png";
 import wisuda from '../assets/images/wisuda.jpg';
 import rakerkesda from '../assets/images/rakerkesda.jpg';
 import satusehatdki from '../assets/images/satusehatdki.jpg';
+import sipak from '../assets/images/sipak.png';
 
 export default {
   data() {
@@ -296,7 +296,17 @@ export default {
       portfolio: [
         {
           id: 0,
-          title: "Aplikasi Skrining Kesehatan (Web App)",
+          title: "SIPAK",
+          desc: "Sistem Penetapan Angka Kredit (SIPAK), proyek yang saya kerjakan bersama Bidang Sumber Daya Manusia Kesehatan (SDMK) Dinas Kesehatan Provinsi DKI Jakarta, digunakan untuk melakukan konversi formulir PAK konvensional menjadi format terintegrasi sesuai standar BKN, pada hasil akhir sistem ini dapat melakukan pengambilan keputusan bahwa angka kredit yang dimiliki pegawai (PNS) dapat digunakan sebagai acuan untuk kenaikan pangkat dan jenjang",
+          url: "#",
+          image: sipak,
+          buttonStatus: "Tidak Tersedia",
+          stack: ['Laravel', 'Jquery', 'Mysql'],
+          isClicked: false
+        },
+        {
+          id: 0,
+          title: "Skrining Kesehatan (Web App)",
           desc: "Aplikasi ini digunakan untuk pencatatan skrining yang diinisiasi oleh bidang PMPTM, aplikasi ini digunakan dalam event Challenge Downgrade Ukuran Bajumu",
           url: "https://dinkes.jakarta.go.id/challenge",
           image: skrining,
@@ -306,12 +316,12 @@ export default {
         },
         {
           id: 1,
-          title: "SI Sumber Daya Manusia Kesehatan (DKI)",
-          desc: "Sistem informasi yang digunakan untuk mengelola seluruh tenaga kesehatan di Provinsi DKI Jakarta, sistem ini merupakan Sistem Yang digunakan oleh Dinas Kesehatan Provinsi DKI Jakarta",
+          title: "Sistem Informasi Kepegawaian",
+          desc: "Sistem informasi yang digunakan untuk mengelola seluruh tenaga kesehatan di Provinsi DKI Jakarta, sistem ini merupakan Sistem Yang digunakan oleh Dinas Kesehatan Provinsi DKI Jakarta ",
           url: "#",
           image: sdmk,
           buttonStatus: "Tidak tersedia",
-          stack: ['Laravel', 'Jquery', 'Mysql'],
+          stack: ['Laravel', 'Jquery', 'Mysql', ],
           isClicked: false
         },
         {
